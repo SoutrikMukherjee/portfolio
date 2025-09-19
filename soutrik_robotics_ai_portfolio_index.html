@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soutrik Mukherjee | Robotics • AI • Mechatronics</title>
+  <meta name="description" content="Portfolio of Soutrik Mukherjee — Robotics, AI/ML, Mechatronics, and Intelligent Systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <!-- Tailwind via CDN for quick deploy -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --bg:#0A0E27; --card:#0F1435; --text:#EAF0FF; --muted:#9BB0FF; --accent:#6EE7B7; --brand:#22D3EE;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg); color:var(--text); font-family:'Inter',system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    .glass{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03)); backdrop-filter: blur(8px); border:1px solid rgba(255,255,255,.08)}
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.08)}
+    .tag{border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.04)}
+    .shadow-soft{box-shadow:0 10px 30px rgba(0,0,0,.35)}
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="fixed inset-x-0 top-0 z-50">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="glass mt-4 mb-3 rounded-2xl px-4 py-3 flex items-center justify-between shadow-soft">
+        <a href="#top" class="text-lg font-semibold tracking-tight">Soutrik <span class="text-[var(--brand)]">Mukherjee</span></a>
+        <div class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#projects" class="hover:text-[var(--brand)]">Projects</a>
+          <a href="#skills" class="hover:text-[var(--brand)]">Skills</a>
+          <a href="#papers" class="hover:text-[var(--brand)]">Papers</a>
+          <a href="#resume" class="hover:text-[var(--brand)]">Resume</a>
+          <a href="#contact" class="px-3 py-1.5 rounded-xl bg-[var(--brand)] text-[#06101a] font-medium">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main id="top" class="pt-28">
+    <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-[1.2fr_.8fr] gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl/tight font-black">Building intelligent systems that touch the physical world.</h1>
+        <p class="mt-5 text-[15px] md:text-base text-[var(--muted)] max-w-2xl">I’m a Robotics/AI engineer working across perception → planning → control. I design full‑stack systems that fuse sensors, classical controls, and modern ML to deliver robust behavior in real environments.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#projects" class="px-4 py-2 rounded-xl bg-[var(--accent)] text-[#052015] font-semibold">View Projects</a>
+          <a href="#resume" class="px-4 py-2 rounded-xl border border-white/15">Download CV</a>
+          <a href="https://github.com/SoutrikMukherjee" class="px-4 py-2 rounded-xl border border-white/15" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/soutrik-mukherjee" class="px-4 py-2 rounded-xl border border-white/15" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="mt-6 flex gap-2 text-xs">
+          <span class="tag px-3 py-1 rounded-full">ROS 2 / MoveIt 2</span>
+          <span class="tag px-3 py-1 rounded-full">C++ • Python</span>
+          <span class="tag px-3 py-1 rounded-full">Perception • Control</span>
+          <span class="tag px-3 py-1 rounded-full">GPU / CUDA</span>
+        </div>
+      </div>
+      <figure class="relative">
+        <!-- Replace images/profile.jpg with your headshot -->
+        <img src="images/profile.jpg" alt="Soutrik headshot" class="w-full rounded-3xl border border-white/10 shadow-soft object-cover aspect-[4/5]" />
+        <figcaption class="text-[12px] text-white/60 mt-2">(Replace with your photo at <code>images/profile.jpg</code>)</figcaption>
+      </figure>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="mt-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Highlighted Projects</h2>
+        <a href="#contact" class="text-sm underline underline-offset-4">Work with me →</a>
+      </div>
+
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <!-- Project Card 1: LLM → ROS2 -->
+        <article class="card rounded-2xl p-5 shadow-soft">
+          <img src="images/llm-ros2.jpg" class="rounded-xl border border-white/10 aspect-video object-cover" alt="LLM to ROS 2" />
+          <div class="mt-4 flex items-center gap-2 text-xs">
+            <span class="tag px-2.5 py-1 rounded-full">ROS 2</span>
+            <span class="tag px-2.5 py-1 rounded-full">MoveIt 2</span>
+            <span class="tag px-2.5 py-1 rounded-full">LLM</span>
+          </div>
+          <h3 class="mt-3 text-xl font-bold">Natural‑Language Robot Manipulation</h3>
+          <p class="mt-1.5 text-sm text-white/75">Built an LLM→ROS 2 bridge with command parser, context manager, and trajectory execution in Gazebo/MoveIt 2. Supports multi‑user control with tests and CI.</p>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a href="#" class="underline underline-offset-4">Code</a>
+            <a href="#" class="underline underline-offset-4">Demo</a>
+          </div>
+        </article>
+
+        <!-- Project Card 2: Bi‑Directional Drone -->
+        <article class="card rounded-2xl p-5 shadow-soft">
+          <img src="images/drone.jpg" class="rounded-xl border border-white/10 aspect-video object-cover" alt="Bi‑Directional Drone" />
+          <div class="mt-4 flex items-center gap-2 text-xs">
+            <span class="tag px-2.5 py-1 rounded-full">Gazebo</span>
+            <span class="tag px-2.5 py-1 rounded-full">Path Planning</span>
+            <span class="tag px-2.5 py-1 rounded-full">Autonomy</span>
+          </div>
+          <h3 class="mt-3 text-xl font-bold">Bi‑Directional Drone: Design + Path Planning</h3>
+          <p class="mt-1.5 text-sm text-white/75">Concept + simulation of a drone that can carry payload above and below the frame with autonomous navigation.</p>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a href="assets/Bi-Directional Drone Design and its Path Planning.pdf" class="underline underline-offset-4">Paper (PDF)</a>
+          </div>
+        </article>
+
+        <!-- Project Card 3: Fish‑Descaler -->
+        <article class="card rounded-2xl p-5 shadow-soft">
+          <img src="images/fish-descaler.jpg" class="rounded-xl border border-white/10 aspect-video object-cover" alt="Fish Descaler" />
+          <div class="mt-4 flex items-center gap-2 text-xs">
+            <span class="tag px-2.5 py-1 rounded-full">CAD</span>
+            <span class="tag px-2.5 py-1 rounded-full">FEA</span>
+            <span class="tag px-2.5 py-1 rounded-full">Embedded</span>
+          </div>
+          <h3 class="mt-3 text-xl font-bold">Rotating Cylinder Fish‑Descaler</h3>
+          <p class="mt-1.5 text-sm text-white/75">Affordable, mass‑manufacturable descaling system — perforated stainless drum, strap drive, and wash cycle.</p>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a href="assets/Rotating Cylinder Design for agro-fishery.pdf" class="underline underline-offset-4">Paper (PDF)</a>
+          </div>
+        </article>
+
+        <!-- Project Card 4: Topology Optimized Headphones -->
+        <article class="card rounded-2xl p-5 shadow-soft">
+          <img src="images/headphone-to.jpg" class="rounded-xl border border-white/10 aspect-video object-cover" alt="Topology Optimized Headphones" />
+          <div class="mt-4 flex items-center gap-2 text-xs">
+            <span class="tag px-2.5 py-1 rounded-full">Topology Opt.</span>
+            <span class="tag px-2.5 py-1 rounded-full">FEA</span>
+            <span class="tag px-2.5 py-1 rounded-full">Additive Mfg</span>
+          </div>
+          <h3 class="mt-3 text-xl font-bold">Structural Topology Optimization of Headphones</h3>
+          <p class="mt-1.5 text-sm text-white/75">Iterative stiffness‑to‑mass optimization with OptiStruct/Altair — design space reduction and manufacturable forms.</p>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a href="assets/Structural Topology Optimization of Headphone.pdf" class="underline underline-offset-4">Paper (PDF)</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="mt-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Technical Skills</h2>
+      <div class="grid md:grid-cols-3 gap-6 mt-6">
+        <div class="card rounded-2xl p-5">
+          <h3 class="font-semibold">Robotics</h3>
+          <ul class="mt-3 text-sm text-white/80 space-y-2 list-disc list-inside">
+            <li>ROS 2 / DDS, MoveIt 2, Gazebo, RViz</li>
+            <li>Perception (LiDAR, RGB‑D, IMU fusion)</li>
+            <li>Controls (PID, state estimation, Kalman)</li>
+          </ul>
+        </div>
+        <div class="card rounded-2xl p-5">
+          <h3 class="font-semibold">AI/Systems</h3>
+          <ul class="mt-3 text-sm text-white/80 space-y-2 list-disc list-inside">
+            <li>Python, C++, CUDA, PyTorch/JAX</li>
+            <li>ONNX, TensorRT, Docker, CI/CD</li>
+            <li>Optimization, numerical methods</li>
+          </ul>
+        </div>
+        <div class="card rounded-2xl p-5">
+          <h3 class="font-semibold">Hardware/CAD</h3>
+          <ul class="mt-3 text-sm text-white/80 space-y-2 list-disc list-inside">
+            <li>SolidWorks, CATIA V5, Fusion 360</li>
+            <li>ANSYS (FEA), KiCad/Altium</li>
+            <li>STM32, ARM Cortex‑M/A</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAPERS -->
+    <section id="papers" class="mt-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Publications</h2>
+      <ol class="mt-6 space-y-4 text-sm leading-6 text-white/85">
+        <li>Structural Topology Optimization of Headphones — <a href="assets/Structural Topology Optimization of Headphone.pdf" class="underline">PDF</a></li>
+        <li>Design of Novel Fish De‑Scaler System — <a href="assets/Rotating Cylinder Design for agro-fishery.pdf" class="underline">PDF</a></li>
+        <li>Bi‑Directional Drone Design and its Path Planning — <a href="assets/Bi-Directional Drone Design and its Path Planning.pdf" class="underline">PDF</a></li>
+      </ol>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="mt-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="card rounded-2xl p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">Resume</h2>
+          <p class="mt-1 text-white/70 text-sm">One‑page PDF tuned for robotics/AI roles.</p>
+        </div>
+        <a href="assets/Resume_Soutrik.pdf" class="px-5 py-2 rounded-xl bg-[var(--accent)] text-[#052015] font-semibold">Download PDF</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-24">
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold">Let’s build.</h2>
+          <p class="mt-3 text-white/75">Email <a class="underline" href="mailto:soutrik.viratech@gmail.com">soutrik.viratech@gmail.com</a> or message on <a class="underline" href="https://linkedin.com/in/soutrik-mukherjee" target="_blank" rel="noopener">LinkedIn</a>.</p>
+          <div class="mt-4 text-xs text-white/60">Philadelphia, PA • Open to relocation</div>
+        </div>
+        <form class="card rounded-2xl p-5 space-y-3" name="contact" netlify>
+          <input class="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10" name="name" placeholder="Your name" />
+          <input class="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10" type="email" name="email" placeholder="Email" />
+          <textarea class="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 min-h-[120px]" name="message" placeholder="Message"></textarea>
+          <button class="px-4 py-2 rounded-xl bg-[var(--brand)] text-[#06101a] font-semibold" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 py-8 text-center text-xs text-white/60">© <span id="y"></span> Soutrik Mukherjee</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

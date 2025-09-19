@@ -30,6 +30,7 @@
         <a href="#top" class="text-lg font-semibold tracking-tight">Soutrik <span class="text-[var(--brand)]">Mukherjee</span></a>
         <div class="hidden md:flex items-center gap-6 text-sm">
           <a href="#projects" class="hover:text-[var(--brand)]">Projects</a>
+          <a href="#experience" class="hover:text-[var(--brand)]">Experience</a>
           <a href="#skills" class="hover:text-[var(--brand)]">Skills</a>
           <a href="#papers" class="hover:text-[var(--brand)]">Papers</a>
           <a href="#resume" class="hover:text-[var(--brand)]">Resume</a>
@@ -135,6 +136,84 @@
           </div>
         </article>
       </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="mt-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-6">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Work Experience</h2>
+        <a href="#resume" class="text-sm underline underline-offset-4">Full resume →</a>
+      </div>
+
+      <ol class="relative border-s border-white/10 mt-8">
+        <!-- Experience 1: GRASP Lab -->
+        <li class="ms-6 md:ms-8 pb-10">
+          <span class="absolute -start-3 md:-start-4 mt-1.5 h-6 w-6 rounded-full bg-[var(--brand)]/90 ring-4 ring-[var(--bg)]"></span>
+          <div class="card rounded-2xl p-5 shadow-soft">
+            <div class="flex flex-wrap items-baseline justify-between gap-3">
+              <h3 class="text-xl font-bold">Graduate Researcher <span class="text-white/60">| GRASP Lab, University of Pennsylvania</span></h3>
+              <div class="text-xs text-white/60">March 2023 – March 2024 · Philadelphia, PA</div>
+            </div>
+            <p class="mt-2 text-white/80 text-sm">Perception → planning → control for a Fetch mobile manipulator; reliability and autonomy improvements.</p>
+            <ul class="mt-3 list-disc list-inside text-sm text-white/80 space-y-1.5">
+              <li>Developed the perception‑planning‑control loop for a 7‑DOF arm on a Freight base (11 total DOF) to operate unsupervised indoors.</li>
+              <li>Fused LiDAR + RGB‑D + IMU for navigation, tuned motion‑planning to avoid stalls, hardened ROS 2 messaging over flaky Wi‑Fi, and built a regression harness to prove improvements.</li>
+              <li>Integrated SMORES‑EP modular faces for contact‑aware grasps and re‑tries on odd shapes; onboard processor ran Kalman filters with centralized Wi‑Fi control.</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs">
+              <span class="tag px-3 py-1 rounded-full">ROS 2</span>
+              <span class="tag px-3 py-1 rounded-full">Perception</span>
+              <span class="tag px-3 py-1 rounded-full">Planning/Control</span>
+              <span class="tag px-3 py-1 rounded-full">Regression Harness</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- Experience 2: ISRO -->
+        <li class="ms-6 md:ms-8 pb-10">
+          <span class="absolute -start-3 md:-start-4 mt-1.5 h-6 w-6 rounded-full bg-[var(--brand)]/90 ring-4 ring-[var(--bg)]"></span>
+          <div class="card rounded-2xl p-5 shadow-soft">
+            <div class="flex flex-wrap items-baseline justify-between gap-3">
+              <h3 class="text-xl font-bold">Embedded Systems Intern <span class="text-white/60">| ISRO — Indian Space Research Organisation</span></h3>
+              <div class="text-xs text-white/60">Sep 2021 – Mar 2022 · India</div>
+            </div>
+            <p class="mt-2 text-white/80 text-sm">Reaction‑wheel attitude dynamics and HIL validation at ISRO’s Inertial Systems Unit (IISU).</p>
+            <ul class="mt-3 list-disc list-inside text-sm text-white/80 space-y-1.5">
+              <li>Built and validated a three‑axis reaction‑wheel attitude dynamics model in MATLAB/Simulink; closed the sim‑to‑real loop on a hardware‑in‑the‑loop bench with motor electronics.</li>
+              <li>Scripted sweeps to tune controllers and designed fixtures so vibe/thermal tests could be repeated exactly on flight‑class reaction‑wheel assemblies.</li>
+              <li>Stack: Simscape Multibody, quaternion kinematics, reaction‑wheel torque models; EKF for rate estimation; PID controllers for step/slew.</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs">
+              <span class="tag px-3 py-1 rounded-full">MATLAB/Simulink</span>
+              <span class="tag px-3 py-1 rounded-full">Simscape</span>
+              <span class="tag px-3 py-1 rounded-full">EKF</span>
+              <span class="tag px-3 py-1 rounded-full">HIL</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- Experience 3: INAE -->
+        <li class="ms-6 md:ms-8 pb-2">
+          <span class="absolute -start-3 md:-start-4 mt-1.5 h-6 w-6 rounded-full bg-[var(--brand)]/90 ring-4 ring-[var(--bg)]"></span>
+          <div class="card rounded-2xl p-5 shadow-soft">
+            <div class="flex flex-wrap items-baseline justify-between gap-3">
+              <h3 class="text-xl font-bold">Research Fellow <span class="text-white/60">| Indian National Academy of Engineering (INAE)</span></h3>
+              <div class="text-xs text-white/60">Apr 2021 – Aug 2021 · India</div>
+            </div>
+            <p class="mt-2 text-white/80 text-sm">Robotic welding optimization with feedback control and computer vision quality checks.</p>
+            <ul class="mt-3 list-disc list-inside text-sm text-white/80 space-y-1.5">
+              <li>Tuned a robotic welding process using structured experiments; closed the loop with temperature feedback and automated weld quality checks with computer vision.</li>
+              <li>Design of Experiments (Taguchi) for factor screening; Response Surface Methodology for optimization. IR camera for bead temperature; PI control for adaptive wire‑feed; PLC via Modbus.</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2 text-xs">
+              <span class="tag px-3 py-1 rounded-full">DOE/Taguchi</span>
+              <span class="tag px-3 py-1 rounded-full">RSM</span>
+              <span class="tag px-3 py-1 rounded-full">Computer Vision</span>
+              <span class="tag px-3 py-1 rounded-full">Control</span>
+            </div>
+          </div>
+        </li>
+      </ol>
     </section>
 
     <!-- SKILLS -->

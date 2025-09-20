@@ -208,8 +208,26 @@
               <li>Fused LiDAR + RGB‑D + IMU for navigation, tuned motion‑planning to avoid stalls, hardened ROS 2 messaging over flaky Wi‑Fi, and built a regression harness to prove improvements.</li>
               <li>Integrated SMORES‑EP modular faces for contact‑aware grasps and re‑tries on odd shapes; onboard processor ran Kalman filters with centralized Wi‑Fi control.</li>
             </ul>
-            <!-- Inline demo video -->
-<div class="mt-4">
+            <!-- Inline demo videos (new first, then previous) -->
+<div class="mt-4 space-y-4">
+
+  <!-- Video 1: NEW (goes first) -->
+  <div class="aspect-video rounded-xl overflow-hidden border border-white/10 shadow-soft">
+    <video
+      controls
+      preload="metadata"
+      class="w-full h-full object-cover"
+      poster="images/grasp-setup.jpg"
+    >
+      <source src="assets/grasp-setup.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="text-[12px] text-white/60 -mt-1">
+    System setup & environment — GRASP Lab (ROS 2, sensors & bring-up).
+  </div>
+
+  <!-- Video 2: PREVIOUS (comes second) -->
   <div class="aspect-video rounded-xl overflow-hidden border border-white/10 shadow-soft">
     <video
       controls
@@ -221,19 +239,15 @@
       Your browser does not support the video tag.
     </video>
   </div>
-  <div class="mt-2 text-[12px] text-white/60">
-    Short clip: perception → planning → control loop on Fetch (ROS 2).
-  </div>
-</div>
+  <div class="text-[12px] text-white/60 -mt-1">
+    Perception → planning → control loop on Fetch (ROS 2).
+     </div>
 
-            <div class="mt-4 flex flex-wrap gap-2 text-xs">
-              <span class="tag px-3 py-1 rounded-full">ROS 2</span>
-              <span class="tag px-3 py-1 rounded-full">Perception</span>
-              <span class="tag px-3 py-1 rounded-full">Planning/Control</span>
-              <span class="tag px-3 py-1 rounded-full">Regression Harness</span>
-            </div>
-          </div>
-        </li>
+  </div>
+
+           
+
+  </li>
 
         <!-- Experience 2: ISRO -->
         <li class="ms-6 md:ms-8 pb-10">

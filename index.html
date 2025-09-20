@@ -632,15 +632,14 @@ document.querySelectorAll('video:not([poster])').forEach(async (vid) => {
     <!-- Small video -->
     <div class="rounded-xl overflow-hidden border border-white/10">
       <video
-        class="w-full h-full object-cover"
-        controls
-        preload="metadata"
-        playsinline
-        poster="images/dcs-poster.jpg"
-      >
-        <source src="assets/dcs-demo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+  class="w-full h-full object-cover"
+  controls
+  preload="metadata"
+  playsinline
+  poster="images/dcs-poster.jpg">
+  <source src="assets/dcs-demo.mp4" type="video/mp4" />
+</video>
+
       <div class="text-[12px] text-white/60 mt-2 px-1">
         Short demo: plug-and-play modules with sub-millisecond IPC and hot-swapping.
       </div>

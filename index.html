@@ -208,6 +208,24 @@
               <li>Fused LiDAR + RGB‑D + IMU for navigation, tuned motion‑planning to avoid stalls, hardened ROS 2 messaging over flaky Wi‑Fi, and built a regression harness to prove improvements.</li>
               <li>Integrated SMORES‑EP modular faces for contact‑aware grasps and re‑tries on odd shapes; onboard processor ran Kalman filters with centralized Wi‑Fi control.</li>
             </ul>
+            <!-- Inline demo video -->
+<div class="mt-4">
+  <div class="aspect-video rounded-xl overflow-hidden border border-white/10 shadow-soft">
+    <video
+      controls
+      preload="metadata"
+      class="w-full h-full object-cover"
+      poster="images/grasp-poster.jpg"
+    >
+      <source src="assets/grasp-short.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="mt-2 text-[12px] text-white/60">
+    Short clip: perception → planning → control loop on Fetch (ROS 2).
+  </div>
+</div>
+
             <div class="mt-4 flex flex-wrap gap-2 text-xs">
               <span class="tag px-3 py-1 rounded-full">ROS 2</span>
               <span class="tag px-3 py-1 rounded-full">Perception</span>

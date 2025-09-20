@@ -360,30 +360,29 @@ document.querySelectorAll('video:not([poster])').forEach(async (vid) => {
   <!-- Video 1: NEW (goes first) -->
   <div class="aspect-video rounded-xl overflow-hidden border border-white/10 shadow-soft">
     <video
-      controls
-      preload="metadata"
-      class="w-full h-full object-cover"
-      poster="images/grasp-setup.jpg"
-    >
-      <source src="assets/grasp-setup.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+  controls
+  preload="metadata"
+  class="w-full h-full object-cover"
+  poster="images/grasp-setup.jpg">
+  <source src="assets/grasp-setup.mp4" type="video/mp4" />
+</video>
+
   </div>
   <div class="text-[12px] text-white/60 -mt-1">
     System setup & environment — GRASP Lab (ROS 2, sensors & bring-up).
   </div>
+  
 
   <!-- Video 2: PREVIOUS (comes second) -->
   <div class="aspect-video rounded-xl overflow-hidden border border-white/10 shadow-soft">
     <video
-      controls
-      preload="metadata"
-      class="w-full h-full object-cover"
-      poster="images/grasp-poster.jpg"
-    >
-      <source src="assets/grasp-short.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+  controls
+  preload="metadata"
+  class="w-full h-full object-cover"
+  poster="images/grasp-poster.jpg">
+  <source src="assets/grasp-short.mp4" type="video/mp4" />
+</video>
+
   </div>
   <div class="text-[12px] text-white/60 -mt-1">
     Perception → planning → control loop on Fetch (ROS 2).
